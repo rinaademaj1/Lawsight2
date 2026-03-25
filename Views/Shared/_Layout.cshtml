@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EnerLex – Law & Energy Advisory</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/Content/css/main.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap&subset=latin-ext" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- ─── HEADER ─── -->
+    <header>
+        <div id="header-wrap" class="transparent">
+            <div id="header-main">
+
+                <a class="logo" href="#">
+                    <img src="~/img/enterlex.png" alt="EnerLex Logo">
+                </a>
+
+                <nav>
+                    <ul class="primary-menu">
+                        <li><a href="#section-home" data-i18n="nav_home">Home</a></li>
+                        <li><a href="#section-services" data-i18n="nav_services">Services</a></li>
+                        <li><a href="#section-stats" data-i18n="nav_about">About</a></li>
+                        <li><a href="#section-contact" data-i18n="nav_contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+
+                    <div class="lang-switcher" id="langSwitcher">
+                        <button class="lang-btn" id="langBtn">
+                            <span id="activeFlag">ANG</span>
+                            <span id="activeLang">EN</span>
+                            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="10" height="10" class="lang-arrow"><polyline points="2,4 6,8 10,4" /></svg>
+                        </button>
+                        <div class="lang-dropdown">
+                            <a class="lang-option" href="#" data-flag="🇦🇱" data-code="SQ">
+                                <span>🇦🇱</span> Shqip <span class="opt-check">✔</span>
+                            </a>
+                            <a class="lang-option active" href="#" data-flag="🇬🇧" data-code="EN">
+                                <span>EN</span> English <span class="opt-check">✔</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="/Home/VHLex" class="btn-vhlex"><span>VHLex</span></a>
+
+                    <a href="#section-contact" class="btn-consult" data-i18n="btn_consult">Konsulto Tani</a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ─── PAGE CONTENT ─── -->
+    @RenderBody()
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+        <div class="footer-top">
+            <div>
+                <a class="footer-logo-link" href="#">Ener<span>Lex</span></a>
+                <p class="footer-desc" data-i18n="footer_desc">We provide specialized legal services for the energy sector as a trusted partner of international financial institutions and strategic investors.</p>
+                <ul class="footer-contact-list">
+                    <li><span>📞</span><span>+383 44 308 830</span></li>
+                    <li><span>🌐</span><span>www.enerlex-ks.com</span></li>
+                    <li><span>📍</span><span>Rr. 'Sylejman Vokshi' nr.17, k.2 nr.5, 10000 Prishtinë</span></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-widget-title" data-i18n="footer_links">Links</div>
+                <ul class="footer-links">
+                    <li><a href="#section-home" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#section-services" data-i18n="nav_services">Services</a></li>
+                    <li><a href="#section-stats" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="#section-contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-widget-title" data-i18n="footer_services_title">Services</div>
+                <ul class="footer-links">
+                    <li><a href="#" data-i18n="footer_svc1">Contract Drafting</a></li>
+                    <li><a href="#" data-i18n="footer_svc2">Due Diligence</a></li>
+                    <li><a href="#" data-i18n="footer_svc3">Legal Analysis</a></li>
+                    <li><a href="#" data-i18n="footer_svc4">Energy Market</a></li>
+                    <li><a href="#" data-i18n="footer_svc5">Corporate Governance</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-widget-title" data-i18n="footer_expertise">Expertise</div>
+                <ul class="footer-links">
+                    <li><a href="#">KfW · EBRD · World Bank</a></li>
+                    <li><a href="#" data-i18n="footer_exp1">Primary Legislation</a></li>
+                    <li><a href="#" data-i18n="footer_exp2">International PPA Markets</a></li>
+                    <li><a href="#">OECD Standards</a></li>
+                    <li><a href="#" data-i18n="footer_exp3">Inter-TSO Agreements</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">2026 &copy; EnerLex — All rights reserved</div>
+            <div class="footer-social">
+                <a href="#">in</a>
+                <a href="#">f</a>
+                <a href="#">tw</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="~/Scripts/javascript/site.js"></script>
+
+    @RenderSection("scripts", required: false)
+    @section scripts {
+        <script src="~/Scripts/javascript/litigation.js"></script>
+    }
+
+</body>
+</html>
