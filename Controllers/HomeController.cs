@@ -10,6 +10,7 @@ namespace Lawsight2.Controllers
     {
         public ActionResult Index()
         {
+          
             return View();
         }
 
@@ -27,7 +28,7 @@ namespace Lawsight2.Controllers
             return View();
         }
         public ActionResult VHLex() {
-
+         
             return View();
 
         }

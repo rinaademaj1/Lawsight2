@@ -321,3 +321,32 @@ window.addEventListener('scroll', () => {
 const urlLang = new URLSearchParams(window.location.search).get('lang');
 const savedLang = urlLang || localStorage.getItem('enerlex_lang') || 'EN';
 setLangUI(savedLang);
+/* ════════════════════════════════════════
+   TOGGLE MODE — EnerLex / VHLex
+════════════════════════════════════════ */
+let isVHLex = false;
+
+function toggleMode() {
+    isVHLex = !isVHLex;
+
+    const logoLeft = document.getElementById('logo-left');
+    const logoImgLeft = document.getElementById('logo-img-left');
+    const logoRight = document.getElementById('logo-right');
+    const toggleBtn = document.getElementById('toggle-btn');
+    const toggleText = document.getElementById('toggle-btn-text');
+
+    if (isVHLex) {
+        // Shfaq logon VHLex në të djathtë
+        logoImgLeft.src = 'img/vhlex-logo.png';
+        logoRight.style.display = 'flex';
+        logoLeft.style.display = 'none';
+        toggleText.textContent = 'EnerLex';
+        toggleBtn.href = '@Url.Action("Index", "Home")';
+    } else {
+        // Kthehu tek EnerLex
+        logoImgLeft.src = 'img/enterlex.png';
+        logoRight.style.display = 'none';
+        logoLeft.style.display = 'flex';
+        toggleText.textContent = 'VHLex';
+    }
+}

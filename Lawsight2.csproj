@@ -148,6 +148,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="img\background-ree.png" />
+    <Content Include="img\EnerLex logo with infinity symbol.png" />
     <Content Include="img\enterlex.png" />
     <Content Include="img\foto1.jpg" />
     <Content Include="img\foto10.jpg" />

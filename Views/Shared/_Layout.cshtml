@@ -20,11 +20,19 @@
     <header>
         <div id="header-wrap" class="transparent">
             <div id="header-main">
-
                 <a class="logo" href="#">
-                    <img src="~/img/enterlex.png" alt="EnerLex Logo">
+                    @{
+                        var isVHLex = ViewContext.RouteData.Values["action"]?.ToString() == "VHLex";
+                    }
+                    @if (isVHLex)
+                    {
+                        <img src="~/img/VHLex.png" alt="VHLex Logo">
+                    }
+                    else
+                    {
+                        <img src="~/img/enterlex.png" alt="EnerLex Logo">
+                    }
                 </a>
-
                 <nav>
                     <ul class="primary-menu">
                         <li><a href="#section-home" data-i18n="nav_home">Home</a></li>
@@ -33,9 +41,7 @@
                         <li><a href="#section-contact" data-i18n="nav_contact">Contact</a></li>
                     </ul>
                 </nav>
-
                 <div class="header-actions">
-
                     <div class="lang-switcher" id="langSwitcher">
                         <button class="lang-btn" id="langBtn">
                             <span id="activeFlag">ANG</span>
@@ -51,11 +57,15 @@
                             </a>
                         </div>
                     </div>
-
-                    <a href="/Home/VHLex" class="btn-vhlex"><span>VHLex</span></a>
-
+                    @if (isVHLex)
+                    {
+                        <a href="/Home/Index" class="btn-vhlex"><span>EnerLex</span></a>
+                    }
+                    else
+                    {
+                        <a href="/Home/VHLex" class="btn-vhlex"><span>VHLex</span></a>
+                    }
                     <a href="#section-contact" class="btn-consult" data-i18n="btn_consult">Konsulto Tani</a>
-
                 </div>
             </div>
         </div>
