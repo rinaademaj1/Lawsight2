@@ -32,5 +32,18 @@ namespace Lawsight2.Controllers
             return View();
 
         }
+        public ActionResult Language(string language)
+        {
+            if (language == "EN")
+            {
+                Session["EN"] = true;
+            }
+            else
+            {
+                Session["EN"] = null;
+            }
+
+            return Redirect(Request.UrlReferrer.ToString());
+        }
     }
 }

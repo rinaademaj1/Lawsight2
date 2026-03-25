@@ -23,6 +23,7 @@
                 <a class="logo" href="#">
                     @{
                         var isVHLex = ViewContext.RouteData.Values["action"]?.ToString() == "VHLex";
+                        var isEN = Session["EN"] != null;
                     }
                     @if (isVHLex)
                     {
@@ -33,6 +34,7 @@
                         <img src="~/img/enterlex.png" alt="EnerLex Logo">
                     }
                 </a>
+
                 <nav>
                     <ul class="primary-menu">
                         <li><a href="#section-home" data-i18n="nav_home">Home</a></li>
@@ -41,22 +43,38 @@
                         <li><a href="#section-contact" data-i18n="nav_contact">Contact</a></li>
                     </ul>
                 </nav>
+
                 <div class="header-actions">
                     <div class="lang-switcher" id="langSwitcher">
+
+                        <!-- BUTTON -->
                         <button class="lang-btn" id="langBtn">
-                            <span id="activeFlag">ANG</span>
-                            <span id="activeLang">EN</span>
-                            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="10" height="10" class="lang-arrow"><polyline points="2,4 6,8 10,4" /></svg>
+                            <span id="activeFlag">
+                                @(isEN ? "🇬🇧" : "🇦🇱")
+                            </span>
+                            <span id="activeLang">
+                                @(isEN ? "EN" : "SQ")
+                            </span>
+                            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="10" height="10" class="lang-arrow">
+                                <polyline points="2,4 6,8 10,4" />
+                            </svg>
                         </button>
+
+                        <!-- DROPDOWN -->
                         <div class="lang-dropdown">
-                            <a class="lang-option" href="#" data-flag="🇦🇱" data-code="SQ">
-                                <span>🇦🇱</span> Shqip <span class="opt-check">✔</span>
+                            <a class="lang-option @(isEN ? "" : "active")"
+                               href="/Home/Language?language=SQ">
+                                <span>🇦🇱</span> Shqip
                             </a>
-                            <a class="lang-option active" href="#" data-flag="🇬🇧" data-code="EN">
-                                <span>EN</span> English <span class="opt-check">✔</span>
+
+                            <a class="lang-option @(isEN ? "active" : "")"
+                               href="/Home/Language?language=EN">
+                                <span>🇬🇧</span> English
                             </a>
                         </div>
+
                     </div>
+
                     @if (isVHLex)
                     {
                         <a href="/Home/Index" class="btn-vhlex"><span>EnerLex</span></a>
@@ -65,7 +83,10 @@
                     {
                         <a href="/Home/VHLex" class="btn-vhlex"><span>VHLex</span></a>
                     }
-                    <a href="#section-contact" class="btn-consult" data-i18n="btn_consult">Konsulto Tani</a>
+
+                    <a href="#section-contact" class="btn-consult" data-i18n="btn_consult">
+                        Konsulto Tani
+                    </a>
                 </div>
             </div>
         </div>
