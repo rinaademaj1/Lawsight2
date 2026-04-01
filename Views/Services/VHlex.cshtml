@@ -1,0 +1,967 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- ─── SERVICES ─── -->
+<section id="section-services" class="services-section">
+    <div class="inner">
+        <div class="section-heading">
+            <div class="sub" data-i18n="services_sub">Our Services</div>
+            <h2 data-i18n-html="services_title">Strategic Advisory &amp; <cite>Legal Excellence</cite></h2>
+            <div class="h-gap"><i></i><i></i><i></i><i></i></div>
+        </div>
+
+        <div class="services-grid">
+
+            <!-- 1 -->
+            <div class="service-card">
+                <div class="service-card-hover"><img src="~/img/foto4.jpg" alt=""></div>
+                <div class="service-card-body">
+                    <div class="service-icon">⚖️</div>
+                    <h3 data-i18n="svc1_title">Commercial Litigation &amp; Arbitration</h3>
+                    <p data-i18n="svc1_text">Representing enterprises and investors in complex commercial disputes, including breach of contract, shareholder disagreements, and international arbitration.</p>
+                    <a href="/Services/ComercialLitigation" class="service-card-cta" data-i18n="learn_more">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="service-card">
+                <div class="service-card-hover"><img src="~/img/foto5.jpg" alt=""></div>
+                <div class="service-card-body">
+                    <div class="service-icon">🏛️</div>
+                    <h3 data-i18n="svc2_title">Civil Law &amp; Property Disputes</h3>
+                    <p data-i18n="svc2_text">Providing comprehensive representation in civil matters, focusing on property rights, ownership transformation, and civil liability.</p>
+                    <a href="/Services/CivilLaw" class="service-card-cta" data-i18n="learn_more">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="service-card">
+                <div class="service-card-hover"><img src="~/img/foto6.jpg" alt=""></div>
+                <div class="service-card-body">
+                    <div class="service-icon">🏛️</div>
+                    <h3 data-i18n="svc3_title">Administrative &amp; Regulatory Litigation</h3>
+                    <p data-i18n="svc3_text">Representing clients in disputes against governmental and regulatory bodies, including administrative acts and licensing issues.</p>
+                    <a href="/Services/Administrative" class="service-card-cta" data-i18n="learn_more">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="service-card">
+                <div class="service-card-hover"><img src="~/img/foto7.jpg" alt=""></div>
+                <div class="service-card-body">
+                    <div class="service-icon">🛡️</div>
+                    <h3 data-i18n="svc4_title">White-Collar &amp; Corporate Criminal Defense</h3>
+                    <p data-i18n="svc4_text">Defending business entities and executives against allegations of corporate misconduct or regulatory violations.</p>
+                    <a href="/Services/WhiteCollar" class="service-card-cta" data-i18n="learn_more">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="service-card">
+                <div class="service-card-hover"><img src="~/img/foto8.jpg" alt=""></div>
+                <div class="service-card-body">
+                    <div class="service-icon">👥</div>
+                    <h3 data-i18n="svc5_title">Labor &amp; Employment Disputes</h3>
+                    <p data-i18n="svc5_text">Advising and representing employers in labor disputes, personnel management, and compliance with labor laws.</p>
+                    <a href="/Services/Labor" class="service-card-cta" data-i18n="learn_more">Learn More →</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<a href="#section-home" class="scroll-top" id="scroll-top">↑</a>
+
+<style>
+    /* ─── SERVICES SECTION ─── */
+    .services-section {
+        background-image: url('/img/foto10.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+
+        .services-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+        }
+
+        .services-section .inner {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+    .section-heading {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+        .section-heading .sub {
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 14px;
+        }
+
+        .section-heading h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 3vw, 2.6rem);
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+
+            .section-heading h2 cite {
+                font-style: italic;
+                color: var(--gold);
+                font-weight: 400;
+            }
+
+    .h-gap {
+        display: flex;
+        gap: 6px;
+        justify-content: center;
+    }
+
+        .h-gap i {
+            display: block;
+            height: 2px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
+
+            .h-gap i:nth-child(1) {
+                width: 32px;
+            }
+
+            .h-gap i:nth-child(2) {
+                width: 8px;
+            }
+
+            .h-gap i:nth-child(3) {
+                width: 8px;
+            }
+
+            .h-gap i:nth-child(4) {
+                width: 8px;
+            }
+
+    /* ─── GRID ─── */
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
+        background: rgba(61,59,59,0.4);
+        grid-auto-rows: 1fr;
+    }
+
+    /* ─── CARD ─── */
+    .service-card {
+        background: var(--dark);
+        border: 1px solid var(--border);
+        padding: 40px 34px;
+        position: relative;
+        overflow: hidden;
+        transition: border-color 0.3s;
+        cursor: default;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .service-card:hover {
+            border-color: var(--gold);
+        }
+
+        .service-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--gold);
+            transition: width 0.4s ease;
+        }
+
+        .service-card:hover::after {
+            width: 100%;
+        }
+
+    .service-card-hover {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: opacity 0.5s ease;
+        z-index: 0;
+    }
+
+        .service-card-hover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        .service-card-hover::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.72);
+        }
+
+    .service-card:hover .service-card-hover {
+        opacity: 1;
+    }
+
+    .service-card-body {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .service-icon {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        background: linear-gradient(135deg, var(--gold), var(--gold-hover));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .service-card h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--white);
+        margin-bottom: 12px;
+        line-height: 1.4;
+    }
+
+    .service-card p {
+        font-size: 0.82rem;
+        line-height: 1.8;
+        color: var(--text-muted);
+        flex: 1;
+    }
+
+    .service-card-cta {
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--gold);
+        text-decoration: none;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .service-card:hover .service-card-cta {
+        opacity: 1;
+    }
+
+    /* ─── SLIDER ─── */
+    .rev-slider-wrap {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .slide {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transition: opacity 1.2s ease;
+        pointer-events: none;
+    }
+
+        .slide.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+    .slide-bg {
+        position: absolute;
+        inset: 0;
+        transform: scale(1.06);
+        animation: none;
+        overflow: hidden;
+    }
+
+        .slide-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+    .slide.active .slide-bg {
+        animation: kenBurns 14s ease-out forwards;
+    }
+
+    .slide-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(15,10,8,0.62);
+    }
+
+    .slide-overlay-left {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(100deg, rgba(15,10,8,0.82) 0%, rgba(15,10,8,0.5) 55%, rgba(15,10,8,0.15) 100%);
+    }
+
+    .slide-overlay-center {
+        position: absolute;
+        inset: 0;
+        background: rgba(15,10,8,0.65);
+    }
+
+    .slide-overlay-right {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(260deg, rgba(15,10,8,0.82) 0%, rgba(15,10,8,0.5) 55%, rgba(15,10,8,0.15) 100%);
+    }
+
+    .slide-group {
+        position: absolute;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+        .slide-group.align-left {
+            left: 60px;
+            right: auto;
+            top: 50%;
+            transform: translateY(calc(-50% + 40px));
+            align-items: flex-start;
+            text-align: left;
+            max-width: 760px;
+        }
+
+        .slide-group.align-center {
+            left: 50%;
+            transform: translate(-50%, calc(-50% + 40px));
+            top: 50%;
+            align-items: center;
+            text-align: center;
+            max-width: 800px;
+        }
+
+        .slide-group.align-right {
+            right: 60px;
+            left: auto;
+            top: 50%;
+            transform: translateY(calc(-50% + 40px));
+            align-items: flex-end;
+            text-align: right;
+            max-width: 760px;
+        }
+
+    .layer-eyebrow {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: var(--white);
+        margin-bottom: 18px;
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    .layer-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: clamp(2.2rem, 5vw, 4rem);
+        font-weight: 600;
+        line-height: 1.18;
+        color: var(--white);
+        margin-bottom: 32px;
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+        .layer-title cite {
+            font-style: italic;
+            font-family: 'Playfair Display', serif;
+            color: var(--gold);
+            font-weight: 400;
+        }
+
+    .layer-btn {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    .slide.active .layer-eyebrow {
+        animation: layerUp 0.7s 0.5s ease forwards;
+    }
+
+    .slide.active .layer-title {
+        animation: layerUp 0.8s 0.9s ease forwards;
+    }
+
+    .slide.active .layer-btn {
+        animation: layerRight 0.7s 1.3s ease forwards;
+    }
+
+    .slide.active .align-right .layer-btn {
+        animation: layerLeft 0.7s 1.3s ease forwards;
+    }
+
+    .slide.active .align-center .layer-btn {
+        animation: layerUp 0.7s 1.3s ease forwards;
+    }
+
+    .slider-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 20;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: rgba(0,0,0,0.25);
+        border: 1px solid rgba(255,255,255,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: white;
+        font-size: 1.1rem;
+    }
+
+        .slider-arrow:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+        }
+
+        .slider-arrow.prev {
+            left: 36px;
+        }
+
+        .slider-arrow.next {
+            right: 36px;
+        }
+
+    .slider-dots {
+        position: absolute;
+        bottom: 32px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
+        display: flex;
+        gap: 10px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.35);
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+        .dot.active {
+            background: var(--gold);
+            width: 28px;
+            border-radius: 4px;
+        }
+
+    /* ─── FANCYBOX ─── */
+    .fancybox-section {
+        background: var(--dark);
+        background-image: url('/img/foto9.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+        .fancybox-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(18,13,11,0.9);
+        }
+
+    .fancybox-inner {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+
+    .fancybox-item {
+        padding: 52px 40px;
+        border-right: 1px solid var(--border);
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+        transition: background 0.3s;
+    }
+
+        .fancybox-item:last-child {
+            border-right: none;
+        }
+
+        .fancybox-item:hover {
+            background: rgba(213,170,109,0.06);
+        }
+
+    .fancybox-icon {
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+        background: linear-gradient(135deg, var(--gold) 0%, var(--gold-hover) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    .fancybox-content h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--white);
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+
+    .fancybox-content p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.82rem;
+        line-height: 1.75;
+        color: var(--text-muted);
+    }
+
+    /* ─── STATS ─── */
+    .stats-section {
+        padding: 100px 60px;
+        background: #f5f0ea;
+        position: relative;
+    }
+
+        .stats-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(213,170,109,0.04);
+        }
+
+        .stats-section .inner {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+    .stats-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 60px;
+        align-items: start;
+    }
+
+    .stats-heading .sub {
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 14px;
+    }
+
+    .stats-heading h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+        font-weight: 700;
+        color: var(--dark);
+        line-height: 1.3;
+    }
+
+        .stats-heading h2 cite {
+            font-style: italic;
+            color: var(--gold-hover);
+        }
+
+    .stats-heading .h-gap {
+        justify-content: flex-start;
+    }
+
+    .stats-text {
+        font-size: 0.86rem;
+        line-height: 1.8;
+        color: #555;
+        padding-top: 8px;
+    }
+
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 0;
+    }
+
+    .stat-item {
+        padding: 40px 30px;
+        border-right: 1px solid rgba(0,0,0,0.1);
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
+
+        .stat-item:last-child {
+            border-right: none;
+        }
+
+    .stat-num {
+        font-family: 'Playfair Display', serif;
+        font-size: 3.2rem;
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 8px;
+    }
+
+    .stat-item:nth-child(odd) .stat-num {
+        color: var(--gold-hover);
+    }
+
+    .stat-item:nth-child(even) .stat-num {
+        color: var(--dark);
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #888;
+    }
+
+    /* ─── CONTACT ─── */
+    .contact-section {
+        background-image: url('/img/foto12.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.82);
+        }
+
+        .contact-section .inner {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 5fr 4fr 3fr;
+        gap: 60px;
+        margin-bottom: 60px;
+        align-items: start;
+    }
+
+    .contact-sub {
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 14px;
+    }
+
+    .contact-h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+        font-weight: 700;
+        color: var(--white);
+        line-height: 1.35;
+    }
+
+        .contact-h2 cite {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+    .contact-info-item {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        margin-bottom: 24px;
+    }
+
+    .contact-info-icon {
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+        background: transparent;
+        border: 1px solid var(--gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--gold);
+        font-size: 0.9rem;
+    }
+
+    .contact-info-text {
+        font-size: 0.84rem;
+        line-height: 1.7;
+        color: rgba(255,255,255,0.75);
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        grid-column: 1 / -1;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 14px 18px;
+        background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.12);
+        color: var(--white);
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.84rem;
+        outline: none;
+        transition: border-color 0.3s;
+    }
+
+        .form-input:focus {
+            border-color: var(--gold);
+        }
+
+        .form-input::placeholder {
+            color: rgba(255,255,255,0.35);
+        }
+
+    .form-textarea {
+        width: 100%;
+        resize: vertical;
+        min-height: 130px;
+    }
+
+    .btn-submit {
+        align-self: flex-start;
+        background: var(--gold);
+        color: var(--dark);
+        border: 2px solid var(--gold);
+        padding: 14px 46px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    /* ─── SCROLL TOP ─── */
+    .scroll-top {
+        position: fixed;
+        bottom: 36px;
+        right: 36px;
+        width: 46px;
+        height: 46px;
+        background: var(--gold);
+        color: var(--dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        text-decoration: none;
+        z-index: 999;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+        .scroll-top.show {
+            opacity: 1;
+        }
+</style>
+
+<script>
+    /* ── TRANSLATIONS VHLex ── */
+    const vhTranslations = {
+        EN: {
+            services_sub: "Our Services",
+            services_title: "Strategic Advisory &amp; <cite>Legal Excellence</cite>",
+            svc1_title: "Commercial Litigation & Arbitration",
+            svc1_text: "Representing enterprises and investors in complex commercial disputes, including breach of contract, shareholder disagreements, and international arbitration.",
+            svc2_title: "Civil Law & Property Disputes",
+            svc2_text: "Providing comprehensive representation in civil matters, focusing on property rights, ownership transformation, and civil liability.",
+            svc3_title: "Administrative & Regulatory Litigation",
+            svc3_text: "Representing clients in disputes against governmental and regulatory bodies, including administrative acts and licensing issues.",
+            svc4_title: "White-Collar & Corporate Criminal Defense",
+            svc4_text: "Defending business entities and executives against allegations of corporate misconduct or regulatory violations.",
+            svc5_title: "Labor & Employment Disputes",
+            svc5_text: "Advising and representing employers in labor disputes, personnel management, and compliance with labor laws.",
+            learn_more: "Learn More →"
+        },
+        SQ: {
+            services_sub: "Shërbimet Tona",
+            services_title: "Këshillim Strategjik &amp; <cite>Ekselencë Ligjore</cite>",
+            svc1_title: "Konteste Tregtare & Arbitrazh",
+            svc1_text: "Përfaqësojmë ndërmarrje dhe investitorë në mosmarrëveshje komplekse tregtare, përfshirë shkelje kontratash, mosmarrëveshje ndërmjet aksionarëve dhe arbitrazh ndërkombëtar.",
+            svc2_title: "E Drejta Civile & Kontestet Pronësore",
+            svc2_text: "Ofrojmë përfaqësim gjithëpërfshirës në çështje civile, me fokus në të drejtat pronësore, transformimin e pronësisë dhe përgjegjësinë civile.",
+            svc3_title: "Konteste Administrative & Rregullatore",
+            svc3_text: "Përfaqësojmë klientët në mosmarrëveshje kundër organeve qeveritare dhe rregullatore, përfshirë aktet administrative dhe çështjet e licencimit.",
+            svc4_title: "Mbrojtje Penale Korporative",
+            svc4_text: "Ofrojmë mbrojtje ligjore për subjektet afariste dhe drejtuesit e tyre ndaj pretendimeve për keqmenaxhim korporativ ose shkelje rregullatore.",
+            svc5_title: "Konteste të Punës & Marrëdhënieve të Punës",
+            svc5_text: "Këshillojmë dhe përfaqësojmë punëdhënësit në konteste pune, menaxhimin e personelit dhe përputhshmërinë me ligjet e punës.",
+            learn_more: "Mëso Më Shumë →"
+        }
+    };
+
+    /* ── APPLY TRANSLATIONS ── */
+    function applyPageTranslations(lang) {
+        const t = vhTranslations[lang];
+        if (!t) return;
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (t[key] !== undefined) el.textContent = t[key];
+        });
+        document.querySelectorAll('[data-i18n-html]').forEach(el => {
+            const key = el.getAttribute('data-i18n-html');
+            if (t[key] !== undefined) el.innerHTML = t[key];
+        });
+    }
+
+    /* ── INIT ── */
+    const initLang = localStorage.getItem('enerlex_lang') || 'EN';
+    applyPageTranslations(initLang);
+
+    /* ── DËGJO NDRYSHIMIN E GJUHËS nga shared.js ── */
+    const _origSetLangUI = window.setLangUI;
+    window.setLangUI = function (code) {
+        if (_origSetLangUI) _origSetLangUI(code);
+        applyPageTranslations(code);
+    };
+
+    /* ── SLIDER ── */
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    let current = 0;
+    let timer;
+
+    function goTo(n) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        slides[current].querySelectorAll('.layer-eyebrow,.layer-title,.layer-btn').forEach(el => {
+            el.style.animation = 'none';
+            el.offsetHeight;
+            el.style.animation = '';
+        });
+        current = (n + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+    }
+
+    function startTimer() {
+        clearInterval(timer);
+        timer = setInterval(() => goTo(current + 1), 9000);
+    }
+
+    const nextBtn = document.getElementById('next-btn');
+    const prevBtn = document.getElementById('prev-btn');
+    if (nextBtn) nextBtn.addEventListener('click', () => { goTo(current + 1); startTimer(); });
+    if (prevBtn) prevBtn.addEventListener('click', () => { goTo(current - 1); startTimer(); });
+    if (dots.length) {
+        dots.forEach(d => d.addEventListener('click', () => { goTo(+d.dataset.index); startTimer(); }));
+        startTimer();
+    }
+
+    /* ── COUNTER ── */
+    function animateCount(el, target, suffix) {
+        let start = 0;
+        const step = Math.ceil(target / 60);
+        const interval = setInterval(() => {
+            start += step;
+            if (start >= target) { start = target; clearInterval(interval); }
+            el.textContent = start + suffix;
+        }, 30);
+    }
+
+    const statsObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (!e.isIntersecting) return;
+            e.target.querySelectorAll('[data-target]').forEach(n => {
+                const t = +n.dataset.target;
+                const suffix = n.textContent.includes('+') ? '+' : '';
+                animateCount(n, t, suffix);
+            });
+            statsObserver.unobserve(e.target);
+        });
+    }, { threshold: 0.3 });
+
+    const statsSection = document.querySelector('.stats-section');
+    if (statsSection) statsObserver.observe(statsSection);
+
+    /* ── NAVIGATION HELPER ── */
+    function goToIndex(section) {
+        const lang = localStorage.getItem('enerlex_lang') || 'EN';
+        const hash = section ? '#' + section : '';
+        window.location.href = 'index.html?lang=' + lang + hash;
+    }
+
+    /* ── SCROLL REVEAL ── */
+    const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.style.opacity = '1';
+                e.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .fancybox-item, .stat-item').forEach((el, i) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(28px)';
+        el.style.transition = `opacity 0.6s ${i * 0.08}s ease, transform 0.6s ${i * 0.08}s ease`;
+        revealObserver.observe(el);
+    });
+</script>

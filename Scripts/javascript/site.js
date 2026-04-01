@@ -131,6 +131,9 @@ const translations = {
         footer_exp1: "Primary Legislation",
         footer_exp2: "International PPA Markets",
         footer_exp3: "Inter-TSO Agreements",
+        cta_title: "Learn More About Our Services",
+        cta_text: "Discover our full range of legal services and expertise tailored for complex business needs.",
+        cta_btn: "Explore Services →"
     },
 
     SQ: {
@@ -252,6 +255,9 @@ const translations = {
         footer_exp1: "Legjislacion Primar",
         footer_exp2: "Tregjet Ndërkombëtare PPA",
         footer_exp3: "Marrëveshje Inter-TSO",
+        cta_title: "Mëso më shumë për shërbimet tona",
+        cta_text: "Zbuloni gamën e plotë të shërbimeve tona ligjore të përshtatura për nevoja komplekse biznesi.",
+        cta_btn: "Shiko Shërbimet →"
     }
 };
 

@@ -207,10 +207,17 @@
     <Content Include="Views\Services\ManagerialConsulting.cshtml" />
     <Content Include="Views\Services\LegalAnalysis.cshtml" />
     <Content Include="Views\Services\ComercialLitigation.cshtml" />
-    <Content Include="Views\Services\EnergieSector.cshtml" />
-    <Content Include="Views\Services\Proceeding.cshtml" />
-    <Content Include="Views\Services\CrossBorder.cshtml" />
-    <Content Include="Views\Services\LiabilityClaims.cshtml" />
+    <Content Include="Views\Services\Drafting.cshtml" />
+    <Content Include="Views\Services\Comprehensive.cshtml" />
+    <Content Include="Views\Services\StrategicAnalyses.cshtml" />
+    <Content Include="Views\Services\CorporateGovernance.cshtml" />
+    <Content Include="Views\Services\MarketIntelligence.cshtml" />
+    <Content Include="Views\Services\CivilLaw.cshtml" />
+    <Content Include="Views\Services\Administrative.cshtml" />
+    <Content Include="Views\Services\WhiteCollar.cshtml" />
+    <Content Include="Views\Services\Labor.cshtml" />
+    <Content Include="Views\Services\Enerlex.cshtml" />
+    <Content Include="Views\Services\VHlex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

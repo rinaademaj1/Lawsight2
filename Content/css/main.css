@@ -758,3 +758,230 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* ─── RESPONSIVE ─── */
+@media (max-width: 900px) {
+    .svc-detail-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .svc-reverse .svc-detail-media {
+        order: -1;
+    }
+
+    .fancybox-inner {
+        grid-template-columns: 1fr;
+        padding: 0 30px;
+    }
+
+    .fancybox-item {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .svc-detail-section {
+        padding: 60px 30px;
+    }
+
+    @media (max-width: 900px) {
+        .svc-detail-inner {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .svc-reverse .svc-detail-media {
+            order: -1;
+        }
+
+        .fancybox-inner {
+            grid-template-columns: 1fr;
+            padding: 0 30px;
+        }
+
+        .fancybox-item {
+            border-right: none;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .contact-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .form-row {
+            grid-template-columns: 1fr;
+        }
+
+        .svc-detail-section {
+            padding: 60px 30px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .svc-detail-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .fancybox-inner {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .fancybox-item {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+}
+
+@media (max-width: 768px) {
+    .svc-detail-section {
+        padding: 60px 20px;
+    }
+
+    .svc-detail-media-frame img {
+        height: 280px;
+    }
+
+    .contact-section .inner {
+        padding: 60px 20px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .svc-nav-pills {
+        gap: 8px;
+    }
+
+    .pill {
+        padding: 8px 16px;
+        font-size: 0.65rem;
+    }
+}
+ /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+        .svc-detail-inner { grid-template-columns: 1fr; gap: 40px; }
+        .fancybox-inner   { grid-template-columns: 1fr; padding: 0 20px; }
+        .fancybox-item    { border-right: none; border-bottom: 1px solid var(--border); }
+    }
+
+    @media (max-width: 768px) {
+        .svc-detail-section   { padding: 60px 20px; }
+        .svc-detail-media-frame img { height: 280px; }
+        .contact-section .inner { padding: 60px 20px; }
+        .contact-grid         { grid-template-columns: 1fr; gap: 30px; }
+        .form-row             { grid-template-columns: 1fr; }
+        .svc-nav-pills        { gap: 8px; }
+        .pill                 { padding: 8px 14px; font-size: 0.62rem; }
+    }
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1024px) {
+    .svc-detail-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .fancybox-inner {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .fancybox-item {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+}
+
+@media (max-width: 768px) {
+    .svc-detail-section {
+        padding: 60px 20px;
+    }
+
+    .svc-detail-media-frame img {
+        height: 280px;
+    }
+
+    .contact-section .inner {
+        padding: 60px 20px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .svc-nav-pills {
+        gap: 8px;
+    }
+
+    .pill {
+        padding: 8px 14px;
+        font-size: 0.62rem;
+    }
+}
+@media (max-width: 1024px) {
+    .svc-detail-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .fancybox-inner {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .fancybox-item {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+}
+
+@media (max-width: 768px) {
+    .svc-detail-section {
+        padding: 60px 20px;
+    }
+
+    .svc-detail-media-frame img {
+        height: 280px;
+    }
+
+    .contact-section .inner {
+        padding: 60px 20px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .svc-nav-pills {
+        gap: 8px;
+    }
+
+    .pill {
+        padding: 8px 14px;
+        font-size: 0.62rem;
+    }
+}

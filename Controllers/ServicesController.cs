@@ -41,23 +41,50 @@ namespace Lawsight2.Controllers
         {
             return View();
         }
-        public ActionResult EnergieSector()
+       
+     
+     
+    
+        public ActionResult Drafting()
         {
             return View();
         }
-        public ActionResult Proceeding()
+        public ActionResult Comprehensive()
         {
             return View();
         }
-        public ActionResult CrossBorder()
+        public ActionResult StrategicAnalyses()
         {
             return View();
         }
-        public ActionResult LiabilityClaims()
+        public ActionResult MarketIntelligence()
+        {
+            return View();
+        }
+        public ActionResult CorporateGovernance()
+        {
+            return View();
+        }
+        //vhlex
+        public ActionResult CivilLaw()
+        { 
+            return View();
+        }
+        public ActionResult Administrative() { 
+            return View();
+        }
+        public ActionResult WhiteCollar() {
+            return View();
+        }
+        public ActionResult Labor() {
+            return View();
+        }
+        public ActionResult Enerlex() {
+            return View();
+        }
+        public ActionResult VHlex()
         {
             return View();
         }
     }
-
-
     }

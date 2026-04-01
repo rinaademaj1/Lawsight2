@@ -35,15 +35,16 @@ namespace Lawsight2.Controllers
         public ActionResult Language(string language)
         {
             if (language == "EN")
-            {
                 Session["EN"] = true;
-            }
             else
-            {
                 Session["EN"] = null;
-            }
 
-            return Redirect(Request.UrlReferrer.ToString());
+            // Mbrojtje nga null nëse UrlReferrer mungon
+            string returnUrl = Request.UrlReferrer != null
+                ? Request.UrlReferrer.ToString()
+                : Url.Action("Index", "Home");
+
+            return Redirect(returnUrl);
         }
     }
 }
